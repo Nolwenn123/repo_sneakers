@@ -6,12 +6,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 3vh 20px;
   background-image: url('../assets/images/flowers.jpg'); /* Exemple de background floral */
   background-size: cover;
   background-position: center;
   color: white;
-  height: 80px;
+  
 }
 
 .logo {
@@ -29,8 +29,8 @@ header {
 }
 
 .flower-icon {
-  width: 40px;
-  height: 40px;
+  width: 10vh;
+  height: auto;
 }
 
 .navbar-menu {
@@ -62,4 +62,9 @@ header {
 
 .navbar-menu a:hover {
   text-decoration: underline;
+}
+
+.floa-logo {
+    width: 20vh;
+    height: auto;
 }

@@ -10,7 +10,7 @@ type Product = {
   id: number;
   name: string;
   price_usd: number;
-  image_url?: string;
+  hero_image?: string;
 };
 
 const Home: React.FC = () => {
@@ -39,8 +39,8 @@ const Home: React.FC = () => {
           {products.map((product) => (
             <div key={product.id} className="shoe-card">
               {/* Affiche une image si tu as une colonne image_url */}
-              {product.image_url && (
-                <img src={product.image_url} alt={product.name} />
+              {product.hero_image && (
+                <img src={product.hero_image} alt={product.name} />
               )}
               <div>
                 <h3>{product.name}</h3>

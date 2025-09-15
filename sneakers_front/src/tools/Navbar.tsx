@@ -1,12 +1,13 @@
 import React from 'react';
 import './Navbar.css';
-import flowerIcon from '../assets/images/flower-icon.png'; // Mettre la vraie image de la fleur si tu l'as
+import flowerIcon from '../assets/images/flower-icon.png';
+import floalogo from '../assets/images/FLOA.png'; // Mettre la vraie image de la fleur si tu l'as
 
 const Navbar: React.FC = () => {
   return (
     <header>
       <div className="navbar-top">
-        <h1 className="logo">FLOA</h1>
+        <img src={floalogo} alt="FLOA logo" className="floa-logo" />        
         <p className="slogan">Un pétale après l’autre</p>
         <img src={flowerIcon} alt="Flower Icon" className="flower-icon" />
       </div>
