@@ -1,0 +1,55 @@
+.home-main {
+    width: 100%;
+    min-height: 100vh;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-section {
+    height: 40vh;
+    width: 100%;
+}
+
+.intro-section img{
+    width: 100%;
+}
+
+.shoes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 3fr)); /* largeur min plus grande */
+  gap: 2rem; /* un peu plus d'espace entre les cases */
+  padding: 4rem;
+}
+
+.shoe-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  aspect-ratio: 1 / 1; /* carré */
+  justify-content: center;
+  padding: 2rem;
+  transition: transform 0.2s;
+}
+
+.shoe-card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.shoe-card img {
+  max-width: 80%;
+  max-height: 60%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.shoe-card h3, .shoe-card p {
+  margin: 0.2rem 0;
+  text-align: center;
+  color: black;
+}

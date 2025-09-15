@@ -1,0 +1,65 @@
+header {
+  font-family: 'Georgia', serif;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-image: url('../assets/images/flowers.jpg'); /* Exemple de background floral */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 80px;
+}
+
+.logo {
+  font-family: 'Alfa Slab One', cursive; /* Style "commun" à ton image (grossi et stylé) */
+  font-size: 42px;
+  margin: 0;
+}
+
+.slogan {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.flower-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-menu {
+  background-color: #7a0a06; /* rouge foncé tel que sur l'image */
+  padding: 10px 0;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.navbar-menu li {
+  margin-right: 30px;
+}
+
+.navbar-menu li:last-child {
+  margin-right: 0;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+}
