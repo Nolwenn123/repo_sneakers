@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
         <div className="navbar-icons">
-          <a href="#profil"><img src={profileIcon} alt="Profil" className="navbar-icon" /></a>
+          <a href="../pages/profile"><img src={profileIcon} alt="Profil" className="navbar-icon" /></a>
           <a href="#panier"><img src={cartIcon} alt="Panier" className="navbar-icon" /></a>
         </div>
       </nav>
