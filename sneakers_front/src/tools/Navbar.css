@@ -33,8 +33,11 @@
 }
 
 .navbar-menu {
-  background-color: #7a0a06; /* rouge foncé tel que sur l'image */
+  background-color: #7a0a06;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-menu ul {
@@ -66,4 +69,28 @@
 .floa-logo {
     width: 20vh;
     height: auto;
+}
+
+.navbar-icon {
+  right: 0;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 40px;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 40px;
 }

@@ -24,6 +24,8 @@
 }
 
 .product-info-section {
+  margin-top: 20vh;
+  margin-right: 10vh;
   flex: 1 1 350px;
   display: flex;
   flex-direction: column;
@@ -105,6 +107,7 @@
   cursor: pointer;
   font-size: 2rem;
   transition: background 0.2s;
+  color: #800000;
 }
 
 .favorite-btn:hover {
