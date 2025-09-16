@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../tools/Navbar';
 import jambesImg from '../assets/images/jambes.jpeg';
 import './Home.css';
 import { supabase } from '../supabaseClient';
+import { Link } from 'react-router-dom';
+
 
 // ...supprime le tableau shoes...
 
 type Product = {
-  id: number;
+  product_id: number;
   name: string;
   price_usd: number;
   hero_image?: string;
@@ -30,14 +31,15 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       <main className="home-main">
         <section className="intro-section">
           <img src={jambesImg} alt="Chaussures marron" className="intro-shoe" />
         </section>
         <section className="shoes-list">
           {products.map((product) => (
-            <div key={product.id} className="shoe-card">
+            <Link to={`/product/${product.product_id}`} key={product.product_id} className="shoe-card-link">
+
+            <div className="shoe-card">
               {/* Affiche une image si tu as une colonne image_url */}
               {product.hero_image && (
                 <img src={product.hero_image} alt={product.name} />
@@ -47,6 +49,8 @@ const Home: React.FC = () => {
                 <p>{product.price_usd} $</p>
               </div>
             </div>
+            </Link>
+
           ))}
         </section>
       </main>

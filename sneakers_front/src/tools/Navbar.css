@@ -1,6 +1,4 @@
-header {
-  font-family: 'Georgia', serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 .navbar-top {
   display: flex;
@@ -21,11 +19,12 @@ header {
 }
 
 .slogan {
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
-  font-weight: 300;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   opacity: 0.85;
+  font-size: 70px;
 }
 
 .flower-icon {
