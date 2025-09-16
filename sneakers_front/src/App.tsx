@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Navbar from './tools/Navbar'
 import ProductPage from './pages/Product';
+import RegisterPage from './pages/Register';
 
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:product_id" element={<ProductPage />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </main>
     </Router>
