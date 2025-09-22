@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
 .profile-container {
+  padding-top: 20vh;
   background: #f8f1e7;
   min-height: 100vh;
   display: flex;
@@ -14,7 +15,8 @@ button:hover {
 }
 
 button {
-  background: #b44a4a;
+  font-family: 'DM Sans', sans-serif;
+  background: #e1c1c1;
   color: #3a2323;
   border: none;
   border-radius: 30px;
