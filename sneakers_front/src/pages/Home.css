@@ -577,3 +577,41 @@
     gap: 1.2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 1.8rem 1.2rem;
+    gap: 1.1rem;
+  }
+
+  .home-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-cta,
+  .home-secondary {
+    width: 100%;
+  }
+
+  .home-controls {
+    padding: 0.7rem;
+    gap: 0.6rem;
+  }
+
+  .filter-toggle {
+    width: 100%;
+  }
+
+  .shoe-card {
+    padding: 1rem;
+  }
+
+  .home-banner {
+    margin-top: 1rem;
+  }
+}
