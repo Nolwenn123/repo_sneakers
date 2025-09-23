@@ -28,3 +28,14 @@ button {
   margin-bottom: 30px;
   transition: background 0.2s;
 }
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 5rem 1.5rem 3rem;
+  }
+
+  .profile-container button {
+    width: 100%;
+    font-size: 1.15rem;
+  }
+}

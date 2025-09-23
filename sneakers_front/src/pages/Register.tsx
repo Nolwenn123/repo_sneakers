@@ -15,6 +15,7 @@ const Register: React.FC<RegisterProps> = ({ setIsLoggedIn, setUserEmail }) => {
   const [error, setError] = useState("");
   const [loginSuccess, setLoginSuccess] = useState(false);
   const [registerIsAdmin, setRegisterIsAdmin] = useState(false);
+  const [hasAcceptedCGU, setHasAcceptedCGU] = useState(false);
   const [profileMessage, setProfileMessage] = useState('');
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -68,6 +69,12 @@ const Register: React.FC<RegisterProps> = ({ setIsLoggedIn, setUserEmail }) => {
     setLoginSuccess(false);
     setError("");
     setProfileMessage("");
+
+    if (!hasAcceptedCGU) {
+      setProfileMessage('');
+      setError("Vous devez accepter les CGU pour créer un compte.");
+      return;
+    }
     const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
       email: registerEmail,
       password: registerPassword,
@@ -106,6 +113,7 @@ const Register: React.FC<RegisterProps> = ({ setIsLoggedIn, setUserEmail }) => {
         ? "Compte administrateur créé. Vérifiez vos emails pour confirmer."
         : "Compte créé. Vérifiez vos emails pour confirmer."
     );
+    setHasAcceptedCGU(false);
     if (registerIsAdmin) {
       localStorage.setItem('isAdmin', 'true');
     } else {
@@ -157,6 +165,16 @@ const Register: React.FC<RegisterProps> = ({ setIsLoggedIn, setUserEmail }) => {
         <button type="submit" className="register-button">
           S'inscrire
         </button>
+        <label className="checkbox-container register-cgu">
+          <input
+            type="checkbox"
+            checked={hasAcceptedCGU}
+            onChange={event => setHasAcceptedCGU(event.target.checked)}
+          />
+          <span>
+            J'accepte les <span className="cgu-highlight">conditions générales d'utilisation</span>
+          </span>
+        </label>
         <label className="checkbox-container">
           <input
             type="checkbox"

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding: 2rem 1.5rem 4rem;
 }
 
 .register-title {
@@ -25,6 +25,7 @@
   align-items: center;
   margin-bottom: 40px;
   gap: 0.8rem;
+  width: 100%;
 }
 
 .register-input {
@@ -86,6 +87,23 @@
   flex: 1;
 }
 
+.register-cgu {
+  align-items: flex-start;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+
+.register-cgu input[type="checkbox"] {
+  margin-top: 0.2rem;
+}
+
+.cgu-highlight {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(122, 24, 24, 0.55);
+}
+
 @media (max-width: 540px) {
   .register-title {
     font-size: 2.4rem;
@@ -99,5 +117,37 @@
   .checkbox-container {
     max-width: 100%;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .register-title {
+    font-size: 2rem;
+    margin-top: 24px;
+    margin-bottom: 18px;
+  }
+
+  .register-input {
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .register-button {
+    font-size: 1.1rem;
+    padding: 14px 0;
+    max-width: 100%;
+  }
+
+  .register-cgu {
+    font-size: 0.9rem;
+  }
+
+  .checkbox-container {
+    gap: 0.5rem;
   }
 }

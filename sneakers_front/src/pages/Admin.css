@@ -243,3 +243,47 @@
     gap: 0.6rem;
   }
 }
+
+@media (max-width: 480px) {
+  .admin-page {
+    padding: 1.5rem 0 3rem;
+    gap: 2rem;
+  }
+
+  .admin-header {
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .admin-header p {
+    font-size: 0.95rem;
+  }
+
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card {
+    padding: 1.4rem;
+  }
+
+  .bar-chart {
+    min-height: 200px;
+  }
+
+  .acquisition-list li,
+  .top-products li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .tickets-table thead {
+    font-size: 0.85rem;
+  }
+
+  .tickets-table th,
+  .tickets-table td {
+    padding: 0.5rem 0.3rem;
+  }
+}

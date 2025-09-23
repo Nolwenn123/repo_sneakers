@@ -441,23 +441,94 @@
 }
 
 @media (max-width: 600px) {
+  .cart-container {
+    padding: 1.5rem 0 3rem;
+  }
+
   .cart-container h1 {
     font-size: 2.4rem;
   }
 
   .cart-item {
-    grid-template-columns: 80px 1fr auto;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    text-align: left;
   }
 
   .cart-img {
+    width: 120px;
     border-radius: 0.6rem;
+    justify-self: center;
   }
 
   .stepper {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.8rem;
   }
 
   .step {
     padding: 0.7rem 0.9rem;
+  }
+
+  .cart-item-actions {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cart-item-actions .trash-btn {
+    align-self: center;
+  }
+
+  .cart-quantity-row {
+    margin-top: 0.2rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .cart-container h1 {
+    font-size: 2rem;
+  }
+
+  .cart-container {
+    width: 95vw;
+  }
+
+  .cart-item {
+    padding: 1rem;
+  }
+
+  .cart-item-actions {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .stepper {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-panel {
+    padding: 1.4rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-methods {
+    justify-content: center;
+  }
+
+  .radio-pill span {
+    padding: 0.55rem 0.9rem;
   }
 }
